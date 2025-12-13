@@ -5,13 +5,13 @@
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
+    <title>Hoà Đồng & Bảo Tâm</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
-    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
+    <meta property="og:title" content="Thiệp cưới — Hoà Đồng & Bảo Tâm - Thứ 4, Ngày 7 tháng 1 năm 2026">
+    <meta property="og:description" content="Trân trọng kính mời quý khách đến dự lễ thành hôn của chúng tôi.">
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
-    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
+    <meta property="og:image" content="https://dongtran97.github.io/hoadong-baotam-wedding//image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
+    <meta property="og:url" content="https://dongtran97.github.io/hoadong-baotam-wedding/">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
@@ -136,36 +136,48 @@
           </div>
           <!-- Start Countdown -->       
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+            <ul id="hitungmundur">
+              <li><span class="days">00</span><p class="days_text">Ngày</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li><span class="hours">00</span><p class="hours_text">Giờ</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">Phút</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Giây</p></li>
             </ul>
-            <div class="spasi">
-            </div>
+            <div class="spasi"></div>
+
             <script type="text/javascript">
+              // Lấy ngày hiện tại
               var now = new Date();
               var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+              var month = now.getMonth() + 1; // JS: tháng từ 0-11
+              var year = now.getFullYear() + 1; // ví dụ countdown tới năm sau
 
+              // Định dạng thời gian theo MM/DD/YYYY HH:MM:SS
+              var nextYearDate = month + '/' + day + '/' + year + ' 07:07:07'; // giờ Việt Nam UTC+7
+
+              // Hoặc đặt ngày cụ thể
+              var targetDate = '01/07/2026 11:30:00'; // format: MM/DD/YYYY HH:MM:SS
+
+              // Khởi tạo countdown
               $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
+                date: targetDate,   // ngày đích
+                offset: +7,         // múi giờ Việt Nam
+                day: 'Ngày',
+                days: 'Ngày',
+                hour: 'Giờ',
+                hours: 'Giờ',
+                minute: 'Phút',
+                minutes: 'Phút',
+                second: 'Giây',
+                seconds: 'Giây'
               }, function () {
-                alert('Done!');
+                alert('Đã đến ngày!');
               });
             </script>  
           </div>
+
           <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
