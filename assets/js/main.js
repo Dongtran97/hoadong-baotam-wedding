@@ -1,9 +1,9 @@
 // ========== ALBUM IMAGES ==========
 const albumImages = [
-    'images/album01.png', 'images/album02.png', 'images/album03.png',
-    'images/album04.png', 'images/album05.png', 'images/album06.png',
-    'images/album07.png', 'images/album08.png', 'images/album09.png',
-    'images/album10.png', 'images/album11.png', 'images/album12.png'
+    'images/HUG01361.jpg', 'images/HUG01319.jpg', 'images/HUG01383.jpg',
+    'images/HUG01458.jpg', 'images/HUG01639.jpg', 'images/HUG02033.png',
+    'images/HUG02369.jpg', 'images/HUG02416.jpg', 'images/HUG02505.jpg',
+    'images/HUG02640.jpg', 'images/HUG02799.jpg', 'images/HUG02972.jpg'
 ];
 let currentImageIndex = 0;
 let touchStartX = 0;
@@ -101,7 +101,7 @@ scrollTopBtn.addEventListener('click', () => {
 
 // ========== COUNTDOWN TIMER ==========
 function updateCountdown() {
-    const weddingDate = new Date('2025-12-26T18:00:00').getTime();
+    const weddingDate = new Date('2026-01-17T18:00:00').getTime();
     const now = new Date().getTime();
     const distance = weddingDate - now;
 

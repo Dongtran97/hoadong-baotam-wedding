@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tamnm2212.github.io/wedding-invitation/sitemap.xml
+Sitemap: https://dongtran97.github.io/hoadong-baotam-wedding/sitemap.xml
