@@ -130,6 +130,33 @@ body {
     }
 }
 
+/* Trên màn hình lớn, giữ "Hòa Đồng & Bảo Tâm" trong một dòng */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Điều chỉnh font size cho màn hình nhỏ */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Giữ "Hòa Đồng" và "& Bảo Tâm" trong một dòng khi màn hình lớn */
+.part1, .ampersand, .part2 {
+    white-space: nowrap;  /* Ngăn không cho chúng xuống dòng */
+}
+
+/* Khi màn hình nhỏ, cho "&" và "Bảo Tâm" xuống dòng */
+@media (max-width: 640px) {
+    .ampersand, .part2 {
+        display: block;  /* Chuyển "&" và "Bảo Tâm" thành block để xuống dòng */
+        text-align: center;
+    }
+}
+
+
 /* ============ STICKY HEADER ============ */
 .sticky-header {
     position: fixed;
