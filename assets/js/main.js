@@ -1,8 +1,8 @@
 // ========== ALBUM IMAGES ==========
 const albumImages = [
     'images/HUG01361.jpg', 'images/HUG01319.jpg', 'images/HUG01383.jpg',
-    'images/HUG01458.jpg', 'images/HUG01639.jpg', 'images/HUG02033.png',
-    'images/HUG02369.jpg', 'images/HUG02416.jpg', 'images/HUG02505.jpg',
+    'images/HUG01445.jpg', 'images/HUG01485.jpg', 'images/HUG01639.png',
+    'images/HUG01863.jpg', 'images/HUG02416.jpg', 'images/HUG02505.jpg',
     'images/HUG02640.jpg', 'images/HUG02799.jpg', 'images/HUG02972.jpg'
 ];
 let currentImageIndex = 0;
