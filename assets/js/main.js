@@ -280,7 +280,7 @@ function handleSwipe() {
 const rsvpForm = document.getElementById('rsvpForm');
 const successMessage = document.getElementById('successMessage');
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz6tRKC6IvwSuBWY9hypsM7-x0bZ1bBoWppLV4_B9MMbQvyM-fSnCl2Qe0juPgUDHf5Iw/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw4QZaVcUg1flbDFc5r45S16LcO6KM6SwKu2NYnlW5nfPUWGVOJQIMAZVG4fo5ecOF9WQ/exec';
 
 const wishListEl = document.getElementById('wishList');
 
